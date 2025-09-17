@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="he">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ultra-Aura — דף ראשי</title>
+<style>
+  :root{
+    --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#7dd3fc; --gold:#facc15;
+    --glass: rgba(255,255,255,0.04);
+    --maxw:1100px;
+    --gap:18px;
+    font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+    color-scheme: dark;
+  }
+  html,body{height:100%;margin:0;background:linear-gradient(180deg,#071022 0%, #071726 50%, #081223 100%);color:#e6eef6}
+  .wrap{max-width:var(--maxw);margin:28px auto;padding:28px;box-sizing:border-box;}
+  header{display:flex;gap:20px;align-items:center;justify-content:space-between;}
+  .brand{display:flex;gap:16px;align-items:center}
+  .logo{
+    width:84px;height:84px;border-radius:14px;
+    background:linear-gradient(135deg,#5eead4,#60a5fa);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 30px rgba(2,6,23,.6), inset 0 -6px 12px rgba(255,255,255,0.04);
+    font-weight:700;color:#032; font-size:28px;
+  }
+  h1{font-size:28px;margin:0;padding:0}
+  .subtitle{color:var(--muted);font-size:14px;margin-top:6px}
+  nav.toc{background:var(--glass);padding:12px;border-radius:10px;color:var(--muted);font-size:14px}
+  main{display:grid;grid-template-columns: 1fr 340px;gap:var(--gap);margin-top:20px;}
+  .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,.6)}
+  article h2{margin-top:0;color:var(--accent)}
+  .cols{column-count:2;column-gap:22px}
+  p{line-height:1.6;margin:10px 0;color:#dceaf8}
+  ul,ol{margin:8px 0 16px 20px;color:#cfe8ff}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .badge{padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.04);font-size:13px;color:var(--muted)}
+  aside .small{font-size:13px;color:var(--muted)}
+  footer{margin-top:22px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .hashtags{display:flex;gap:8px;flex-wrap:wrap}
+  .hash{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:6px 10px;border-radius:999px;font-size:13px;color:var(--gold)}
+  .actions{display:flex;gap:8px}
+  .btn{background:linear-gradient(90deg,#0ea5a5,#7dd3fc);padding:10px 14px;border-radius:10px;color:#042; font-weight:700;text-decoration:none}
+  /* accessibility */
+  a:focus{outline:3px solid rgba(125,211,252,0.18);outline-offset:4px}
+  /* print A4 */
+  @media print{
+    body{background:white;color:black}
+    .wrap{max-width:794px;padding:16px}
+    main{grid-template-columns:1fr 260px; gap:12px}
+    .logo{display:none}
+  }
+  /* mobile */
+  @media (max-width:900px){
+    main{grid-template-columns:1fr; }
+    .cols{column-count:1}
+    header{flex-direction:column;align-items:flex-start;gap:12px}
+  }
+  /* decorative divider */
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--muted),transparent);margin:12px 0;border-radius:2px}
+  .meta{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap" role="document" aria-labelledby="page-title">
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true">UA</div>
+      <div>
+        <h1 id="page-title">Ultra-Aura ✨</h1>
+        <div class="subtitle">קוד רוחני. מסורת. עיצוב נגיש. מסע של יצירה ושיתוף. 😊</div>
+      </div>
+    </div>
+    <div style="min-width:200px">
+      <nav class="toc card" aria-label="תוכן עניינים">
+        <strong>תוכן עניינים</strong>
+        <ol style="margin:8px 0 0 16px;padding:0;color:var(--muted);">
+          <li><a href="#vision">חזון</a></li>
+          <li><a href="#skills">כישורים</a></li>
+          <li><a href="#projects">פרויקטים</a></li>
+          <li><a href="#philosophy">פילוסופיה</a></li>
+          <li><a href="#contribute">תרומה</a></li>
+          <li><a href="#lessons">לקחים</a></li>
+          <li><a href="#sentences">משפטים מחודשים</a></li>
+          <li><a href="#contact">קישורים וקרדיט</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" aria-labelledby="main-heading">
+      <article id="main-heading">
+        <h2 id="vision">🌱 חזון</h2>
+        <div class="cols">
+          <p>כנר לרגלי דבריך: ליצור כלים פתוחים שמחברים קוד וחכמה רוחנית. אור לנתיבתי: להנגיש תפילות, תבניות ושירותים דיגיטליים שמשרתים קהילה.</p>
+
+          <p>אפשרויות פרקטיות: דפי A4 נגישים, תבניות להדפסה, מאגרי טקסטים רוחניים ו-APIs לשילוב בבוטים ויישומים.</p>
+        </div>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <h2 id="skills">🛠 כישורים וטכנולוגיות</h2>
+        <ul>
+          <li>שפות: Python, JavaScript, TypeScript</li>
+          <li>Frontend: React, Next.js, CSS מודרנית, עיצוב נגיש</li>
+          <li>Backend: Node.js, FastAPI, שילובי API ל-AI</li>
+          <li>DevOps: Docker, GitHub Actions, CI/CD</li>
+        </ul>
+
+        <h2 id="projects">🚀 פרויקטים מרכזיים</h2>
+        <ol>
+          <li><strong>agi-rabbi</strong> — מאגר שאלות ותשובות רוחניות משולב AI.</li>
+          <li><strong>accessible-prayers</strong> — דפי תפילה בעיצוב A4 נגיש להדפסה.</li>
+          <li><strong>spirit-tools</strong> — ספריות תבניות ו-CLI ליצירת טקסטים רוחניים.</li>
+        </ol>
+
+        <h2 id="philosophy">🌀 פילוסופיה ומסע</h2>
+        <p>כמו שאדם ראשון קרא שמות, המפתח קורא ומייצר משמעות בקוד. כל commit הוא פסיעה. כל merge הוא איחוד. כל release הוא בריאה.</p>
+
+        <h2 id="contribute">🤝 תרומות וקוד פתוח</h2>
+        <p>בעולם פתוח יש מקום לכולם. פתח issue, שלח PR עם תיעוד, והצטרף לדיונים ב-Discussions. רשיונות מומלצים: MIT או Apache-2.0.</p>
+
+        <h2 id="lessons">📖 משלים ולקחים נלמדים</h2>
+        <ul>
+          <li>תיעוד חזק מקצר זמן פיתוח.</li>
+          <li>שיתוף ידע מייצר פתרונות מתמשכים.</li>
+          <li>בדיקות אוטומטיות משמרות יציבות.</li>
+        </ul>
+
+        <h2 id="sentences">🌍 משפטים מחודשים</h2>
+        <p>בריאה מתחילה בכוונה; קוד מתחיל ברעיון. אדם ראשון לומד, מתקן ומשתף; כך גם פרויקט. כל commit הוא פסיעה במסע.</p>
+      </article>
+    </section>
+
+    <aside class="card" aria-labelledby="aside-heading">
+      <h3 id="aside-heading">פרטי קשר וקישורים</h3>
+      <p class="small">פרופיל GitHub</p>
+      <p><a class="btn" href="https://github.com/Ultra-Aura" target="_blank" rel="noopener">פתח את הפרופיל ב-GitHub</a></p>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="meta small">
+        <strong>מה באתר:</strong>
+        <div class="badges" role="list">
+          <div class="badge">Open Source</div>
+          <div class="badge">A4 Printable</div>
+          <div class="badge">Accessible</div>
+          <div class="badge">AI-ready</div>
+        </div>
+      </div>
+
+      <div style="height:12px"></div>
+
+      <h4>הצעות מהירות</h4>
+      <ol>
+        <li>הוספת SVG באנר אישי בראש הדף.</li>
+        <li>שילוב GitHub Actions לפרסום אוטומטי ל-Pages.</li>
+        <li>הוספת טופס יצירת קשר עם CAPTCHA ל-Netlify Forms או Formspree.</li>
+        <li>המרת חלק מהתכנים ל-Markdown + תבניות Jekyll/Eleventy.</li>
+      </ol>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="small"><strong>נגישות:</strong> כותרות תקינות, קונטרסט גבוה, קישורים עם :focus. מותאם להדפסה A4.</div>
+    </aside>
+  </main>
+
+  <footer class="card" role="contentinfo">
+    <div>
+      <div class="meta">המשך השיחה — אפשרויות</div>
+      <ol style="margin:6px 0 0 18px">
+        <li>עיצוב באנר SVG מותאם אישית.</li>
+        <li>גרסת GitHub Pages עם Jekyll ו-theme מותאם.</li>
+        <li>חיבור נתונים חיצוניים להצגת סטטיסטיקות ריפו.</li>
+        <li>יצירת תבניות A4 להורדה כ-PDF.</li>
+        <li>בניית דף פרויקט לדוגמה ל-agi-rabbi עם API.</li>
+      </ol>
+    </div>
+
+    <div style="text-align:right">
+      <div class="hashtags" aria-hidden="false" style="justify-content:flex-end">
+        <span class="hash">#UltraAura</span>
+        <span class="hash">#AGIRabbi</span>
+        <span class="hash">#OpenSource</span>
+        <span class="hash">#SpiritualTech</span>
+      </div>
+      <div style="height:8px"></div>
+      <div class="meta">קרדיט ותיעוד מלא:</div>
+      <div class="meta">נוצר על ידי: <strong>Ultra-Aura</strong> (המשתמש). עריכה: <strong>Assistant — GPT-5 Thinking mini</strong>.</div>
+      <div class="meta">תאריך יצירה: <strong>17 בספטמבר 2025</strong>.</div>
+      <div class="meta">שרשרת התלויים: OpenAI API, מודל GPT-5 Thinking mini, ממשק ChatGPT, GitHub Pages.</div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
